@@ -125,19 +125,51 @@ input[type="submit"] {
 
 #cerrar-banner {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
+    left: -100px;
 }
 
 #cerrar-banner:checked + #banner-cookies {
     display: none;
 }
 
-#banner-cookies:focus-within {
+body:has(#configuracion-cookies:target) #banner-cookies {
     max-width: 850px;
     max-height: 80vh;
     overflow-y: auto;
+}
+
+#configuracion-cookies:target {
+    position: fixed;
+    left: 50%;
+    bottom: 250px;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    margin: 0;
+    padding: 18px;
+    background: white;
+    border: 2px solid #123b5d;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #718391;
+    z-index: 1001;
+}
+
+#configuracion-cookies:target + form {
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    max-height: 220px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 18px;
+    background: white;
+    border: 2px solid #123b5d;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #718391;
+    z-index: 1001;
 }
 
 .boton {
