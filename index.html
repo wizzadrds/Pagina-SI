@@ -175,20 +175,21 @@
         <p>SmartHome Madrid se preocupa por la privacidad de sus visitantes. Las cookies son pequeños archivos que pueden almacenarse en el navegador cuando se visita una página web.</p>
         <p>Las cookies necesarias permiten el funcionamiento básico de la página. Las cookies analíticas y publicitarias opcionales solo deberían utilizarse después de obtener el consentimiento del usuario.</p>
         <p>El consentimiento debe solicitarse de forma clara, informada y voluntaria, de acuerdo con la normativa aplicable.</p>
-        <p>Esta tienda y sus datos son ficticios. En esta demostración no se instalan cookies analíticas ni publicitarias ni se envían datos a terceros; solo se guarda la elección en el navegador para mostrar cómo funcionaría el aviso.</p>
+        <p>Esta tienda y sus datos son ficticios. El banner es una demostración visual: no instala cookies ni guarda las preferencias.</p>
 
         <h3>Banner de cookies</h3>
+        <input type="checkbox" id="cerrar-banner">
         <div id="banner-cookies">
             <h4>SmartHome Madrid</h4>
             <p>En SmartHome Madrid nos preocupamos por tu privacidad. Utilizamos cookies para garantizar el correcto funcionamiento de nuestra tienda, mejorar nuestros servicios y ofrecerte una experiencia personalizada.</p>
             <p>Elige cómo quieres gestionar las cookies:</p>
 
-            <p><button type="button" id="aceptar-cookies">ACEPTAR TODAS</button></p>
-            <p><button type="button" id="rechazar-cookies">RECHAZAR</button></p>
-            <p><button type="button" id="configurar-cookies">CONFIGURAR</button></p>
+            <p><label for="cerrar-banner" class="boton">ACEPTAR TODAS</label></p>
+            <p><label for="cerrar-banner" class="boton">RECHAZAR</label></p>
+            <p><a href="#configuracion-cookies">CONFIGURAR</a></p>
         </div>
 
-        <h3>Configuración de cookies</h3>
+        <h3 id="configuracion-cookies">Configuración de cookies</h3>
         <form>
             <p>
                 <input type="checkbox" id="cookies-necesarias" name="cookies-necesarias" checked disabled>
@@ -205,7 +206,7 @@
                 Cookies de publicidad
             </p>
 
-            <p><button type="button" id="guardar-cookies">Guardar preferencias</button></p>
+            <p><label for="cerrar-banner" class="boton">Guardar preferencias</label></p>
         </form>
 
         <h3>Newsletter y comunicaciones comerciales</h3>
@@ -271,6 +272,5 @@
         <p>Proyecto educativo. Los datos de la empresa son ficticios.</p>
     </div>
 
-    <script src="cookies.js"></script>
 </body>
 </html>
