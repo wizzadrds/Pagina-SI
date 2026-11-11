@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Hoja de estilos CSS para el diseño visual de la tienda -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Información para los buscadores y datos de autoría -->
     <meta name="keywords" content="HTML, tienda, productos, domótica, tecnología">
     <meta name="description" content="Tienda online SmartHome Madrid">
     <meta name="author" content="Manuel, Ignacio, Alejandro Pascual, Ismael">
 
-    <!-- Título que aparece en la pestaña del navegador -->
     <title>SmartHome Madrid - Tienda Online</title>
 </head>
 
 <body>
 
-    <!-- Nombre de la tienda y descripción principal -->
     <div>
         <h1>SmartHome Madrid</h1>
         <p>Tu tienda online de tecnología y dispositivos inteligentes</p>
     </div>
 
-    <!-- Menú de navegación con enlaces a las distintas partes de la página -->
     <div>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -39,21 +33,16 @@
         </ul>
     </div>
 
-    <!-- Apartado de inicio: presenta la tienda al visitante -->
     <div id="inicio">
         <h2>Bienvenido a SmartHome Madrid</h2>
         <p>En nuestra tienda encontrarás productos tecnológicos para hacer tu hogar más cómodo, conectado y seguro.</p>
         <p>Queremos ofrecer una compra online sencilla y proteger los datos de nuestros clientes.</p>
     </div>
 
-    <!-- Catálogo de productos de la tienda ficticia -->
     <div id="productos">
         <h2>Nuestros productos</h2>
         <p>En SmartHome Madrid encontrarás dispositivos para convertir tu casa en un hogar inteligente.</p>
 
-        <!-- Fotografías de ejemplo cargadas desde enlaces externos. -->
-
-        <!-- Primer producto -->
         <div>
             <h3>Bombilla inteligente Wi-Fi</h3>
             <img src="https://aio.lv/img/cache/product/10466022/52511798_large.webp" alt="Fotografía de una bombilla inteligente Wi-Fi" width="220">
@@ -63,7 +52,6 @@
             <p><a href="#carrito">Añadir al carrito (demostración)</a></p>
         </div>
 
-        <!-- Segundo producto -->
         <div>
             <h3>Enchufe inteligente Wi-Fi</h3>
             <img src="https://commons.wikimedia.org/wiki/Special:FilePath/WLAN-Funk-Stecker_in_Steckdose.jpg" alt="Fotografía de un enchufe inteligente Wi-Fi" width="220">
@@ -73,7 +61,6 @@
             <p><a href="#carrito">Añadir al carrito (demostración)</a></p>
         </div>
 
-        <!-- Tercer producto -->
         <div>
             <h3>Cámara de seguridad Wi-Fi</h3>
             <img src="https://images.unsplash.com/photo-1728971975421-50f3dc9663a4?auto=format&fit=crop&w=800&q=80" alt="Fotografía de una cámara de seguridad Wi-Fi" width="220">
@@ -84,7 +71,6 @@
         </div>
     </div>
 
-    <!-- Carrito de ejemplo: el contenido y el total son fijos porque no se utiliza JavaScript -->
     <div id="carrito">
         <h2>Carrito de compra</h2>
         <p>Este es un ejemplo de cómo se mostraría un carrito. Los enlaces de los productos no añaden artículos automáticamente.</p>
@@ -99,52 +85,50 @@
         <p><a href="#compra">Continuar al proceso de compra</a></p>
     </div>
 
-    <!-- Formulario de compra ficticio: no envía datos ni genera un pedido real -->
     <div id="compra">
         <h2>Finalizar compra</h2>
         <p>Rellena este formulario para ver qué datos podría solicitar una tienda antes de preparar un pedido. No introduzcas datos personales reales: este formulario es solo una demostración y no envía la información.</p>
         <form>
             <h3>Datos del cliente</h3>
             <p>
-                <label for="nombre-compra">Nombre y apellidos:</label>
+                Nombre y apellidos:
                 <input type="text" id="nombre-compra" name="nombre-compra" placeholder="Nombre de ejemplo">
             </p>
             <p>
-                <label for="email-compra">Correo electrónico:</label>
+                Correo electrónico:
                 <input type="email" id="email-compra" name="email-compra" placeholder="ejemplo@correo.com">
             </p>
 
             <h3>Dirección de entrega</h3>
             <p>
-                <label for="direccion-compra">Dirección:</label>
+                Dirección:
                 <input type="text" id="direccion-compra" name="direccion-compra" placeholder="Calle y número">
             </p>
             <p>
-                <label for="cp-compra">Código postal:</label>
+                Código postal:
                 <input type="text" id="cp-compra" name="cp-compra" placeholder="00000">
             </p>
             <p>
-                <label for="ciudad-compra">Ciudad:</label>
+                Ciudad:
                 <input type="text" id="ciudad-compra" name="ciudad-compra" placeholder="Madrid">
             </p>
 
             <h3>Método de pago previsto</h3>
             <p>
                 <input type="radio" id="pago-tarjeta" name="metodo-pago" value="tarjeta">
-                <label for="pago-tarjeta">Tarjeta bancaria (simulación, no se solicitan datos de tarjeta)</label>
+                Tarjeta bancaria (simulación, no se solicitan datos de tarjeta)
             </p>
             <p>
                 <input type="radio" id="pago-transferencia" name="metodo-pago" value="transferencia">
-                <label for="pago-transferencia">Transferencia bancaria (simulación)</label>
+                Transferencia bancaria (simulación)
             </p>
             <p><input type="checkbox" id="aceptar-condiciones-compra" name="aceptar-condiciones-compra">
-                <label for="aceptar-condiciones-compra">He leído las condiciones de contratación (casilla de ejemplo).</label>
+                He leído las condiciones de contratación (casilla de ejemplo).
             </p>
             <p><input type="submit" value="Confirmar pedido (demostración)"></p>
         </form>
     </div>
 
-    <!-- Pantalla de confirmación de ejemplo: no significa que se haya realizado una compra -->
     <div id="confirmacion-pedido">
         <h2>Confirmación del pedido</h2>
         <p>¡Gracias por visitar SmartHome Madrid!</p>
@@ -152,11 +136,9 @@
         <p><b>Estado: pedido de demostración, no realizado.</b></p>
     </div>
 
-    <!-- Aviso legal y condiciones de contratación -->
     <div id="aviso-legal">
         <h2>Aviso legal y condiciones de contratación</h2>
 
-        <!-- Datos inventados únicamente para la actividad de clase -->
         <p>En cumplimiento del deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se muestran los datos ficticios del titular de este sitio web:</p>
 
         <ul>
@@ -168,31 +150,25 @@
             <li>Registro Mercantil: Madrid, Tomo 00000, Folio 000, Sección 8, Hoja M-000000 (datos ficticios)</li>
         </ul>
 
-        <!-- Condiciones que debe conocer el cliente antes de comprar -->
         <h3>Condiciones de contratación</h3>
 
-        <!-- Proceso de compra -->
         <h4>1. Proceso de compra</h4>
         <p>El cliente puede seleccionar los productos que desea comprar y revisar su pedido antes de confirmarlo. Una vez confirmado, recibiría un mensaje de confirmación con los detalles de la compra.</p>
 
-        <!-- Precios y formas de pago -->
         <h4>2. Precios y pagos</h4>
         <p>Los precios de los productos se muestran en euros. En esta simulación, los precios indicados incluyen los impuestos correspondientes. Antes de confirmar un pedido, el cliente debería poder consultar el importe total y los posibles gastos adicionales.</p>
         <p>Métodos de pago previstos para la simulación: tarjeta bancaria y transferencia bancaria. No se procesan pagos reales.</p>
 
-        <!-- Entrega de los productos -->
         <h4>3. Entrega</h4>
         <p>Los pedidos se enviarían al domicilio indicado por el cliente durante el proceso de compra.</p>
         <p>Plazo de entrega previsto para el ejemplo: de 2 a 5 días laborables desde la confirmación del pedido. Los gastos de envío deberían mostrarse antes de finalizar la compra.</p>
 
-        <!-- Devoluciones y garantías -->
         <h4>4. Devoluciones y garantías</h4>
         <p>En las compras a distancia, el consumidor dispone, con carácter general y salvo excepciones legales, de 14 días naturales para ejercer el derecho de desistimiento desde la recepción del producto.</p>
         <p>Los productos cuentan con la garantía legal que corresponda según la normativa vigente de protección de consumidores.</p>
         <p>Para consultas sobre devoluciones o garantías, en esta simulación se facilita el correo contacto@smarthomemadrid.example.</p>
     </div>
 
-    <!-- Política de cookies y comunicaciones comerciales -->
     <div id="cookies">
         <h2>Política de cookies y comunicaciones comerciales</h2>
 
@@ -200,73 +176,64 @@
         <p>Las cookies necesarias permiten el funcionamiento básico de la página. Las cookies analíticas y publicitarias opcionales solo deberían utilizarse después de obtener el consentimiento del usuario.</p>
         <p>El consentimiento debe solicitarse de forma clara, informada y voluntaria, de acuerdo con la normativa aplicable.</p>
 
-        <!-- Representación visual del banner de cookies -->
         <h3>Banner de cookies</h3>
         <div>
             <h4>SmartHome Madrid</h4>
             <p>En SmartHome Madrid nos preocupamos por tu privacidad. Utilizamos cookies para garantizar el correcto funcionamiento de nuestra tienda, mejorar nuestros servicios y ofrecerte una experiencia personalizada.</p>
             <p>Elige cómo quieres gestionar las cookies:</p>
 
-            <!-- Estos botones son visuales: necesitan programación para guardar la elección -->
             <p><button type="button">ACEPTAR TODAS</button></p>
             <p><button type="button">RECHAZAR</button></p>
             <p><button type="button">CONFIGURAR</button></p>
         </div>
 
-        <!-- Formulario visual para elegir las categorías de cookies -->
         <h3>Configuración de cookies</h3>
         <form>
             <p>
-                <!-- Las cookies necesarias están activadas y no se pueden desmarcar -->
                 <input type="checkbox" id="cookies-necesarias" name="cookies-necesarias" checked disabled>
-                <label for="cookies-necesarias">Cookies necesarias</label>
+                Cookies necesarias
             </p>
 
             <p>
                 <input type="checkbox" id="cookies-analiticas" name="cookies-analiticas">
-                <label for="cookies-analiticas">Cookies analíticas</label>
+                Cookies analíticas
             </p>
 
             <p>
                 <input type="checkbox" id="cookies-publicidad" name="cookies-publicidad">
-                <label for="cookies-publicidad">Cookies de publicidad</label>
+                Cookies de publicidad
             </p>
 
             <p><input type="submit" value="Guardar preferencias"></p>
         </form>
 
-        <!-- Formulario de newsletter con consentimiento comercial voluntario -->
         <h3>Newsletter y comunicaciones comerciales</h3>
         <p>Si quieres recibir la newsletter con novedades y promociones de SmartHome Madrid, puedes introducir tu correo electrónico y marcar voluntariamente la casilla de aceptación. No es obligatorio aceptar publicidad para consultar la tienda.</p>
 
         <form>
             <p>
-                <label for="correo">Correo electrónico:</label>
+                Correo electrónico:
                 <input type="email" id="correo" name="correo" required>
             </p>
 
             <p>
-                <!-- Esta casilla no es obligatoria: el consentimiento comercial es voluntario -->
                 <input type="checkbox" id="consentimiento" name="consentimiento">
-                <label for="consentimiento">Acepto recibir comunicaciones comerciales y promociones por correo electrónico.</label>
+                Acepto recibir comunicaciones comerciales y promociones por correo electrónico.
             </p>
 
             <p><input type="submit" value="Suscribirme"></p>
         </form>
     </div>
 
-    <!-- Apartado sobre la seguridad de las conexiones y los certificados digitales -->
     <div id="seguridad">
         <h2>Auditoría de certificados digitales</h2>
 
         <p>Una auditoría de certificados digitales en una pasarela de pago permite comprobar que la transmisión de datos financieros sensibles, como los datos de una tarjeta, se realiza mediante una conexión cifrada y segura.</p>
         <p>También se debe comprobar la seguridad de la pasarela de pago y los requisitos que le sean aplicables, como PCI-DSS.</p>
 
-        <!-- Explicación de los certificados SSL/TLS -->
         <h3>¿Qué son los certificados SSL/TLS?</h3>
         <p>Los certificados SSL/TLS permiten establecer una conexión segura entre el navegador del usuario y la página web.</p>
 
-        <!-- Funciones principales de los certificados -->
         <h3>Funciones de los certificados SSL/TLS</h3>
         <ul>
             <li>Cifrar los datos que se envían por Internet.</li>
@@ -274,7 +241,6 @@
             <li>Comprobar que el certificado corresponde al dominio correcto.</li>
         </ul>
 
-        <!-- Lista de comprobaciones que deben realizarse en la auditoría -->
         <h3>Lista de comprobación de la auditoría</h3>
         <ul>
             <li>Comprobar que la página utiliza HTTPS.</li>
@@ -284,20 +250,17 @@
             <li>Comprobar que la pasarela de pago utiliza una conexión segura.</li>
         </ul>
 
-        <!-- Resultado de las comprobaciones: no se afirma que toda la auditoría esté superada -->
         <h3>Resultado de la auditoría</h3>
         <p>Estado: HTTPS activo en la dirección publicada mediante GitHub Pages.</p>
         <p>La página se puede visitar mediante una conexión HTTPS. Queda pendiente verificar por separado la entidad emisora, la fecha de caducidad y la correspondencia del certificado con el dominio, así como revisar una pasarela de pago real.</p>
         <p>Esta página es una demostración educativa. No recoge pedidos ni procesa pagos reales.</p>
     </div>
 
-    <!-- Apartado con la información de contacto de la tienda -->
     <div id="contacto">
         <h2>Contacto</h2>
         <p>Para contactar con SmartHome Madrid puedes utilizar el correo electrónico o el teléfono ficticios indicados en el aviso legal.</p>
     </div>
 
-    <!-- Pie de página con el nombre de la tienda y enlaces legales -->
     <div>
         <p>&copy; SmartHome Madrid - Tienda online de tecnología</p>
         <p>
