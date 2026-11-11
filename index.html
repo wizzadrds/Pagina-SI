@@ -179,35 +179,36 @@
 
         <h3>Banner de cookies</h3>
         <input type="checkbox" id="cerrar-banner">
+        <input type="checkbox" id="mostrar-configuracion">
         <div id="banner-cookies">
-            <h4>SmartHome Madrid</h4>
-            <p>En SmartHome Madrid nos preocupamos por tu privacidad. Utilizamos cookies para garantizar el correcto funcionamiento de nuestra tienda, mejorar nuestros servicios y ofrecerte una experiencia personalizada.</p>
-            <p>Elige cómo quieres gestionar las cookies:</p>
+            <div id="texto-cookies">
+                <h4>SmartHome Madrid</h4>
+                <p>En SmartHome Madrid nos preocupamos por tu privacidad. Utilizamos cookies para garantizar el correcto funcionamiento de nuestra tienda, mejorar nuestros servicios y ofrecerte una experiencia personalizada.</p>
+                <p>Elige cómo quieres gestionar las cookies:</p>
 
-            <p><label for="cerrar-banner" class="boton">ACEPTAR TODAS</label></p>
-            <p><label for="cerrar-banner" class="boton">RECHAZAR</label></p>
-            <p><a href="#configuracion-cookies">CONFIGURAR</a></p>
+                <p><label for="cerrar-banner" class="boton">ACEPTAR TODAS</label></p>
+                <p><label for="cerrar-banner" class="boton">RECHAZAR</label></p>
+                <p><label for="mostrar-configuracion" class="boton">CONFIGURAR</label></p>
+            </div>
+
+            <div id="panel-configuracion">
+                <h4>Configuración de cookies</h4>
+                <p>
+                    <input type="checkbox" id="cookies-necesarias" name="cookies-necesarias" checked disabled>
+                    Cookies necesarias
+                </p>
+                <p>
+                    <input type="checkbox" id="cookies-analiticas" name="cookies-analiticas">
+                    Cookies analíticas
+                </p>
+                <p>
+                    <input type="checkbox" id="cookies-publicidad" name="cookies-publicidad">
+                    Cookies de publicidad
+                </p>
+                <p><label for="cerrar-banner" class="boton">Guardar preferencias</label></p>
+                <p><label for="mostrar-configuracion" class="boton">VOLVER</label></p>
+            </div>
         </div>
-
-        <h3 id="configuracion-cookies">Configuración de cookies</h3>
-        <form>
-            <p>
-                <input type="checkbox" id="cookies-necesarias" name="cookies-necesarias" checked disabled>
-                Cookies necesarias
-            </p>
-
-            <p>
-                <input type="checkbox" id="cookies-analiticas" name="cookies-analiticas">
-                Cookies analíticas
-            </p>
-
-            <p>
-                <input type="checkbox" id="cookies-publicidad" name="cookies-publicidad">
-                Cookies de publicidad
-            </p>
-
-            <p><label for="cerrar-banner" class="boton">Guardar preferencias</label></p>
-        </form>
 
         <h3>Newsletter y comunicaciones comerciales</h3>
         <p>Si quieres recibir la newsletter con novedades y promociones de SmartHome Madrid, puedes introducir tu correo electrónico y marcar voluntariamente la casilla de aceptación. No es obligatorio aceptar publicidad para consultar la tienda.</p>
