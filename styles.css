@@ -108,6 +108,20 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+#cerrar-banner {
+    position: absolute;
+    left: -100px;
+}
+
+#mostrar-configuracion {
+    position: absolute;
+    left: -100px;
+}
+
+#cerrar-banner:checked ~ #banner-cookies {
+    display: none;
+}
+
 #banner-cookies {
     position: fixed;
     bottom: 15px;
@@ -123,70 +137,16 @@ input[type="submit"] {
     z-index: 1000;
 }
 
-#cerrar-banner {
-    position: absolute;
-    left: -100px;
-}
-
-#cerrar-banner:checked + #banner-cookies {
+#panel-configuracion {
     display: none;
 }
 
-body:has(#configuracion-cookies:target) #banner-cookies {
-    top: 10px;
-    bottom: 10px;
-    max-width: 850px;
-    overflow: hidden;
-}
-
-body:has(#configuracion-cookies:target) #banner-cookies h4 {
+#mostrar-configuracion:checked ~ #banner-cookies #texto-cookies {
     display: none;
 }
 
-body:has(#configuracion-cookies:target) #banner-cookies p {
-    display: none;
-}
-
-#configuracion-cookies {
-    display: none;
-}
-
-#configuracion-cookies + form {
-    display: none;
-}
-
-#configuracion-cookies:target {
+#mostrar-configuracion:checked ~ #banner-cookies #panel-configuracion {
     display: block;
-    position: fixed;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 75%;
-    max-width: 800px;
-    margin: 0;
-    padding: 18px;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    z-index: 1001;
-}
-
-#configuracion-cookies:target + form {
-    display: block;
-    position: fixed;
-    top: 95px;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 75%;
-    max-width: 800px;
-    overflow-y: auto;
-    margin: 0;
-    padding: 18px;
-    background: transparent;
-    border: 0;
-    box-shadow: none;
-    z-index: 1001;
 }
 
 .boton {
