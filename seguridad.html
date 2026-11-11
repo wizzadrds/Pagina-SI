@@ -54,10 +54,22 @@
             <li>Comprobar que la pasarela de pago utiliza una conexión segura.</li>
         </ul>
 
+        <h3>Entidades de referencia</h3>
+        <p>Para consultar información sobre certificados y servicios de confianza se toman como referencia el Organismo Autónomo de Certificación Electrónica y el Ministerio para la Transformación Digital y de la Función Pública.</p>
+
         <h3>Resultado de la auditoría</h3>
         <p>Estado: HTTPS activo en la página web.</p>
-        <p>La conexión HTTPS protege la información que se transmite entre el navegador y la página web mediante un certificado de seguridad.</p>
-        <p>SmartHome Madrid utiliza conexiones HTTPS para proteger la información transmitida entre el navegador y la página web.</p>
+        <p>La conexión HTTPS protege la información que se transmite entre el navegador y la página web mediante un certificado de seguridad TLS.</p>
+
+        <h3>Comprobaciones del certificado</h3>
+        <ul>
+            <li>HTTPS: la dirección de la tienda comienza por https://.</li>
+            <li>Entidad emisora: debe ser una autoridad de certificación reconocida por los navegadores.</li>
+            <li>Fecha de validez: el certificado debe estar dentro de su periodo de vigencia.</li>
+            <li>Dominio: el nombre del dominio debe coincidir con el incluido en el certificado.</li>
+            <li>Pasarela de pago: también debe utilizar HTTPS y disponer de un certificado válido en su propio dominio.</li>
+        </ul>
+        <p>Para revisar estos datos, se puede pulsar el icono situado junto a la dirección web en el navegador y consultar la información de la conexión y del certificado. La comprobación del certificado de la pasarela debe realizarse en la página del proveedor de pago.</p>
     </div>
 
     <input type="checkbox" id="cerrar-banner">
