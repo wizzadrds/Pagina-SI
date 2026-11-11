@@ -27,6 +27,8 @@
         <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#compra">Finalizar compra</a></li>
             <li><a href="#aviso-legal">Aviso legal</a></li>
             <li><a href="#cookies">Política de cookies</a></li>
             <li><a href="#seguridad">Seguridad</a></li>
@@ -41,30 +43,111 @@
         <p>Queremos ofrecer una compra online sencilla y proteger los datos de nuestros clientes.</p>
     </div>
 
-    <!-- Catálogo de productos de ejemplo -->
+    <!-- Catálogo de productos de la tienda ficticia -->
     <div id="productos">
         <h2>Nuestros productos</h2>
+        <p>En SmartHome Madrid encontrarás dispositivos para convertir tu casa en un hogar inteligente.</p>
+
+        <!-- Para añadir las fotografías, crea una carpeta llamada imagenes en el repositorio.
+             Guarda allí los archivos con los nombres indicados en el atributo src de cada imagen. -->
 
         <!-- Primer producto -->
         <div>
-            <h3>Bombilla inteligente</h3>
-            <p>Bombilla LED que permite controlar la iluminación del hogar.</p>
+            <h3>Bombilla inteligente Wi-Fi</h3>
+            <img src="imagenes/bombilla-inteligente.jpg" alt="Fotografía de una bombilla inteligente Wi-Fi" width="220">
+            <p>Bombilla LED de bajo consumo que permite encender, apagar y regular la iluminación desde el móvil. Ideal para crear ambientes personalizados en casa.</p>
+            <p>Características: conexión Wi-Fi, control desde el móvil y luz regulable.</p>
             <p>Precio: 19,99 €</p>
+            <p><a href="#carrito">Añadir al carrito (demostración)</a></p>
         </div>
 
         <!-- Segundo producto -->
         <div>
-            <h3>Enchufe inteligente</h3>
-            <p>Enchufe que permite controlar dispositivos eléctricos.</p>
+            <h3>Enchufe inteligente Wi-Fi</h3>
+            <img src="imagenes/enchufe-inteligente.jpg" alt="Fotografía de un enchufe inteligente Wi-Fi" width="220">
+            <p>Enchufe que permite controlar a distancia los aparatos eléctricos conectados y programar sus horarios de funcionamiento.</p>
+            <p>Características: control desde el móvil, temporizador y conexión Wi-Fi.</p>
             <p>Precio: 24,99 €</p>
+            <p><a href="#carrito">Añadir al carrito (demostración)</a></p>
         </div>
 
         <!-- Tercer producto -->
         <div>
             <h3>Cámara de seguridad Wi-Fi</h3>
-            <p>Cámara para vigilar el hogar mediante una conexión a Internet.</p>
+            <img src="imagenes/camara-seguridad.jpg" alt="Fotografía de una cámara de seguridad Wi-Fi" width="220">
+            <p>Cámara para vigilar el hogar desde el móvil, consultar imágenes en directo y recibir avisos de movimiento.</p>
+            <p>Características: conexión Wi-Fi, visión nocturna y detección de movimiento.</p>
             <p>Precio: 49,99 €</p>
+            <p><a href="#carrito">Añadir al carrito (demostración)</a></p>
         </div>
+    </div>
+
+    <!-- Carrito de ejemplo: el contenido y el total son fijos porque no se utiliza JavaScript -->
+    <div id="carrito">
+        <h2>Carrito de compra</h2>
+        <p>Este es un ejemplo de cómo se mostraría un carrito. Los enlaces de los productos no añaden artículos automáticamente.</p>
+        <ul>
+            <li>1 × Bombilla inteligente Wi-Fi: 19,99 €</li>
+            <li>1 × Enchufe inteligente Wi-Fi: 24,99 €</li>
+            <li>1 × Cámara de seguridad Wi-Fi: 49,99 €</li>
+        </ul>
+        <p>Subtotal: 94,97 €</p>
+        <p>Gastos de envío de ejemplo: 0,00 €</p>
+        <p><strong>Total del pedido de ejemplo: 94,97 €</strong></p>
+        <p><a href="#compra">Continuar al proceso de compra</a></p>
+    </div>
+
+    <!-- Formulario de compra ficticio: no envía datos ni genera un pedido real -->
+    <div id="compra">
+        <h2>Finalizar compra</h2>
+        <p>Rellena este formulario para ver qué datos podría solicitar una tienda antes de preparar un pedido. No introduzcas datos personales reales: este formulario es solo una demostración y no envía la información.</p>
+        <form>
+            <h3>Datos del cliente</h3>
+            <p>
+                <label for="nombre-compra">Nombre y apellidos:</label>
+                <input type="text" id="nombre-compra" name="nombre-compra" placeholder="Nombre de ejemplo">
+            </p>
+            <p>
+                <label for="email-compra">Correo electrónico:</label>
+                <input type="email" id="email-compra" name="email-compra" placeholder="ejemplo@correo.com">
+            </p>
+
+            <h3>Dirección de entrega</h3>
+            <p>
+                <label for="direccion-compra">Dirección:</label>
+                <input type="text" id="direccion-compra" name="direccion-compra" placeholder="Calle y número">
+            </p>
+            <p>
+                <label for="cp-compra">Código postal:</label>
+                <input type="text" id="cp-compra" name="cp-compra" placeholder="00000">
+            </p>
+            <p>
+                <label for="ciudad-compra">Ciudad:</label>
+                <input type="text" id="ciudad-compra" name="ciudad-compra" placeholder="Madrid">
+            </p>
+
+            <h3>Método de pago previsto</h3>
+            <p>
+                <input type="radio" id="pago-tarjeta" name="metodo-pago" value="tarjeta">
+                <label for="pago-tarjeta">Tarjeta bancaria (simulación, no se solicitan datos de tarjeta)</label>
+            </p>
+            <p>
+                <input type="radio" id="pago-transferencia" name="metodo-pago" value="transferencia">
+                <label for="pago-transferencia">Transferencia bancaria (simulación)</label>
+            </p>
+            <p><input type="checkbox" id="aceptar-condiciones-compra" name="aceptar-condiciones-compra">
+                <label for="aceptar-condiciones-compra">He leído las condiciones de contratación (casilla de ejemplo).</label>
+            </p>
+            <p><input type="submit" value="Confirmar pedido (demostración)"></p>
+        </form>
+    </div>
+
+    <!-- Pantalla de confirmación de ejemplo: no significa que se haya realizado una compra -->
+    <div id="confirmacion-pedido">
+        <h2>Confirmación del pedido</h2>
+        <p>¡Gracias por visitar SmartHome Madrid!</p>
+        <p>Este sería el mensaje mostrado después de confirmar una compra. En esta página no se genera ningún número de pedido, no se envía un correo y no se realiza ningún cobro.</p>
+        <p><strong>Estado: pedido de demostración, no realizado.</strong></p>
     </div>
 
     <!-- Aviso legal y condiciones de contratación -->
