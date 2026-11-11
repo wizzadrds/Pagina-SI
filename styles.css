@@ -147,25 +147,35 @@ body:has(#configuracion-cookies:target) #banner-cookies p {
     display: none;
 }
 
+#configuracion-cookies {
+    display: none;
+}
+
+#configuracion-cookies + form {
+    display: none;
+}
+
 #configuracion-cookies:target {
+    display: block;
     position: fixed;
-    top: 35px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
     max-width: 800px;
     margin: 0;
     padding: 18px;
-    background: white;
+    background: transparent;
     border: 0;
     box-shadow: none;
     z-index: 1001;
 }
 
 #configuracion-cookies:target + form {
+    display: block;
     position: fixed;
-    top: 100px;
-    bottom: 35px;
+    top: 95px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     width: 75%;
@@ -173,7 +183,7 @@ body:has(#configuracion-cookies:target) #banner-cookies p {
     overflow-y: auto;
     margin: 0;
     padding: 18px;
-    background: white;
+    background: transparent;
     border: 0;
     box-shadow: none;
     z-index: 1001;
