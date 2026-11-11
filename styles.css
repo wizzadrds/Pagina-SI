@@ -77,3 +77,20 @@ button, input[type="submit"] {
         bottom: 5px;
     }
 }
+
+#cerrar-banner {
+    display: none;
+}
+
+#cerrar-banner:checked + #banner-cookies {
+    display: none;
+}
+
+.boton {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background: #087e9b;
+    color: white;
+    cursor: pointer;
+}
