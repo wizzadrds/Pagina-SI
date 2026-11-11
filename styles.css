@@ -164,15 +164,15 @@ input[type="submit"] {
     box-shadow: none;
 }
 
-#cerrar-banner:checked ~ #banner-cookies {
+#cerrar-banner:checked + #mostrar-configuracion + #banner-cookies {
     display: none;
 }
 
-#mostrar-configuracion:checked ~ #banner-cookies #texto-cookies {
+#mostrar-configuracion:checked + #banner-cookies #texto-cookies {
     display: none;
 }
 
-#mostrar-configuracion:checked ~ #banner-cookies #panel-configuracion {
+#mostrar-configuracion:checked + #banner-cookies #panel-configuracion {
     display: block;
 }
 
