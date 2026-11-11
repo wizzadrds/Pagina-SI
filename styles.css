@@ -118,18 +118,24 @@ input[type="submit"] {
     left: -100px;
 }
 
-#cerrar-banner:checked ~ #banner-cookies {
-    display: none;
+#cerrar-banner:checked ~ #cerrar-banner {
+    position: absolute;
+    left: -100px;
+}
+
+#mostrar-configuracion {
+    position: absolute;
+    left: -100px;
 }
 
 #banner-cookies {
     position: fixed;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
     max-width: 700px;
     margin: 0 auto;
-    padding: 18px;
+    padding: 22px;
     background: white;
     border: 2px solid #123b5d;
     border-radius: 12px;
@@ -137,7 +143,28 @@ input[type="submit"] {
     z-index: 1000;
 }
 
-#panel-configuracion {
+#banner-cookies #texto-cookies {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#banner-cookies #panel-configuracion {
+    display: none;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#cerrar-banner:checked ~ #banner-cookies {
     display: none;
 }
 
@@ -149,12 +176,22 @@ input[type="submit"] {
     display: block;
 }
 
+#banner-cookies h4 {
+    margin-top: 0;
+    color: #123b5d;
+}
+
+#banner-cookies p {
+    margin: 10px 0;
+}
+
 .boton {
     display: inline-block;
     padding: 9px 14px;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     background: #087e9b;
     color: white;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
