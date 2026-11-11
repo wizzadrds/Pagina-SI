@@ -124,11 +124,20 @@ input[type="submit"] {
 }
 
 #cerrar-banner {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
 }
 
 #cerrar-banner:checked + #banner-cookies {
     display: none;
+}
+
+#banner-cookies:focus-within {
+    max-width: 850px;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .boton {
