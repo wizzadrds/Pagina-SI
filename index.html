@@ -177,14 +177,14 @@
         <p>El consentimiento debe solicitarse de forma clara, informada y voluntaria, de acuerdo con la normativa aplicable.</p>
 
         <h3>Banner de cookies</h3>
-        <div>
+        <div id="banner-cookies">
             <h4>SmartHome Madrid</h4>
             <p>En SmartHome Madrid nos preocupamos por tu privacidad. Utilizamos cookies para garantizar el correcto funcionamiento de nuestra tienda, mejorar nuestros servicios y ofrecerte una experiencia personalizada.</p>
             <p>Elige cómo quieres gestionar las cookies:</p>
 
-            <p><button type="button">ACEPTAR TODAS</button></p>
-            <p><button type="button">RECHAZAR</button></p>
-            <p><button type="button">CONFIGURAR</button></p>
+            <p><button type="button" id="aceptar-cookies">ACEPTAR TODAS</button></p>
+            <p><button type="button" id="rechazar-cookies">RECHAZAR</button></p>
+            <p><button type="button" id="configurar-cookies">CONFIGURAR</button></p>
         </div>
 
         <h3>Configuración de cookies</h3>
@@ -204,7 +204,7 @@
                 Cookies de publicidad
             </p>
 
-            <p><input type="submit" value="Guardar preferencias"></p>
+            <p><button type="button" id="guardar-cookies">Guardar preferencias</button></p>
         </form>
 
         <h3>Newsletter y comunicaciones comerciales</h3>
@@ -270,5 +270,6 @@
         <p>Proyecto educativo. Los datos de la empresa son ficticios.</p>
     </div>
 
+    <script src="cookies.js"></script>
 </body>
 </html>
